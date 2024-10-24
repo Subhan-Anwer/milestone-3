@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 20px;
+  background-color: #add8e6;
+}
+
+h1 {
+  text-align: center;
+  color: #003147;
+  margin-top: 30px;
+}
+
+h2,
+h4 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 600px;
+  margin: 20px auto;
+  background-color: #003147;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.personal-info,
+.languages,
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #fff;
+}
+
+#userAddress {
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+.headings {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  max-width: 450px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.education {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+}
+
+
+.education input {
+  width: 100px;
+}
+
+.about-me textarea {
+
+  width: 450px;
+}
+
+/* Button styling */
+.submit-btn {
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  background-color: #0056c7;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.submit-btn:active {
+  background-color: #004291;
+  transform: scale(1);
+  outline: none;  /* Remove the outline when clicked */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:focus {
+  outline: none;  /* Remove the outline when focused */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13vh;
+}
