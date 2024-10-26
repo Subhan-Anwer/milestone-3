@@ -5,8 +5,6 @@ document.getElementById("form").addEventListener("submit", function(e) {
     // Get the value of the name input
     const nameValue = document.getElementById("name").value;
     const professionValue = document.getElementById("professionInput").value;
-<<<<<<< HEAD
-<<<<<<< HEAD
     const userPhone       = document.getElementById("userPhone").value;
     const userEmail       = document.getElementById("userEmail").value;
     const userWebsite     = document.getElementById("userWebsite").value;
@@ -53,33 +51,6 @@ document.getElementById("form").addEventListener("submit", function(e) {
     const userSkill5Level = document.getElementById("skill-level-5").value;
     const userSkill6      = document.getElementById("skill-6").value;
     const userSkill6Level = document.getElementById("skill-level-6").value;
-=======
-=======
->>>>>>> parent of 60ff93d (fully dynamic)
-    const userPhone = document.getElementById("userPhone").value;
-    const userEmail = document.getElementById("userEmail").value;
-    const userWebsite = document.getElementById("userWebsite").value;
-    const userLinkedin = document.getElementById("userLinkedin").value;
-    const userAddress = document.getElementById("userAddress").value;
-    const userYear1 = document.getElementById("year-1").value;
-    const userDegree1 = document.getElementById("degree-1").value;
-    const userUniversity = document.getElementById("university").value;
-    const userYear2 = document.getElementById("year-2").value;
-    const userDegree2 = document.getElementById("degree-2").value;
-    const userCollege = document.getElementById("college").value;
-    const userYear3 = document.getElementById("year-3").value;
-    const userDegree3 = document.getElementById("degree-3").value;
-    const userSchool = document.getElementById("school").value;
-    const language1 = document.getElementById("language-1").value;
-    const level1 = document.getElementById("level-1").value;
-    const language2 = document.getElementById("language-2").value;
-    const level2 = document.getElementById("level-2").value;
-    const language3 = document.getElementById("language-3").value;
-    const level3 = document.getElementById("level-3").value;
-<<<<<<< HEAD
->>>>>>> parent of 60ff93d (fully dynamic)
-=======
->>>>>>> parent of 60ff93d (fully dynamic)
 
 
     // Store the name in local storage to access it on the next page
@@ -105,8 +76,6 @@ document.getElementById("form").addEventListener("submit", function(e) {
     localStorage.setItem("level2", level2);
     localStorage.setItem("language3", language3);
     localStorage.setItem("level3", level3);
-<<<<<<< HEAD
-<<<<<<< HEAD
     localStorage.setItem("userAbout", userAbout);
     localStorage.setItem("userJobYear1", userJobYear1);
     localStorage.setItem("userJobDegree1", userJobDegree1);
@@ -132,10 +101,6 @@ document.getElementById("form").addEventListener("submit", function(e) {
     localStorage.setItem("userSkill5Level", userSkill5Level);
     localStorage.setItem("userSkill6", userSkill6);
     localStorage.setItem("userSkill6Level", userSkill6Level);
-=======
->>>>>>> parent of 60ff93d (fully dynamic)
-=======
->>>>>>> parent of 60ff93d (fully dynamic)
 
     // Redirect to the next page
     window.location.href = "user-resume.html";

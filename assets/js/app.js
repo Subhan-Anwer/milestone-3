@@ -25,8 +25,6 @@ const userAddress = localStorage.getItem("userAddress");
 const userYear1 = localStorage.getItem("userYear1");
 const userDegree1 = localStorage.getItem("userDegree1");
 const userUniversity = localStorage.getItem("userUniversity");
-<<<<<<< HEAD
-<<<<<<< HEAD
 const userYear2      = localStorage.getItem("userYear2");
 const userDegree2    = localStorage.getItem("userDegree2");
 const userCollege    = localStorage.getItem("userCollege");
@@ -65,25 +63,6 @@ const userSkill5  = localStorage.getItem("userSkill5");
 const userSkill5Level = localStorage.getItem("userSkill5Level");
 const userSkill6  = localStorage.getItem("userSkill6");
 const userSkill6Level = localStorage.getItem("userSkill6Level");
-=======
-=======
->>>>>>> parent of 60ff93d (fully dynamic)
-const userYear2 = localStorage.getItem("userYear2");
-const userDegree2 = localStorage.getItem("userDegree2");
-const userCollege = localStorage.getItem("userCollege");
-const userYear3 = localStorage.getItem("userYear3");
-const userDegree3 = localStorage.getItem("userDegree3");
-const userSchool = localStorage.getItem("userSchool");
-const language1 = localStorage.getItem("language1");
-const level1 = localStorage.getItem("level1");
-const language2 = localStorage.getItem("language2");
-const level2 = localStorage.getItem("level2");
-const language3 = localStorage.getItem("language3");
-const level3 = localStorage.getItem("level3");
-<<<<<<< HEAD
->>>>>>> parent of 60ff93d (fully dynamic)
-=======
->>>>>>> parent of 60ff93d (fully dynamic)
 
 if (userName) {
     document.getElementById("name").innerHTML = `${userName}<br><span id="profession">${userProfession}</span>`;
@@ -106,8 +85,6 @@ if (userName) {
     document.getElementById("language-2").textContent = language2;
     document.getElementById("level-2").innerHTML = `<div style="width: ${level2}%; max-width: 100%;"></div>`;
     document.getElementById("language-3").textContent = language3;
-<<<<<<< HEAD
-<<<<<<< HEAD
     document.getElementById("level-3").innerHTML = `<div style="width: ${level3}%; max-width: 100%;"></div>`;
     document.getElementById("about-me").textContent = userAbout;
     document.getElementById("job-year-1").textContent = userJobYear1;
@@ -135,12 +112,6 @@ if (userName) {
     document.getElementById("skilllvl5").innerHTML = `<div style="width: ${userSkill5Level}%; max-width: 100%;"></div>`;
     document.getElementById("skill6").textContent = userSkill6;
     document.getElementById("skilllvl6").innerHTML = `<div style="width: ${userSkill6Level}%; max-width: 100%;"></div>`;
-=======
-    document.getElementById("level-3").innerHTML = `<div style="width: ${level3}%;"></div>`;
->>>>>>> parent of 60ff93d (fully dynamic)
-=======
-    document.getElementById("level-3").innerHTML = `<div style="width: ${level3}%;"></div>`;
->>>>>>> parent of 60ff93d (fully dynamic)
 } else {
     // do nothing!
 }
