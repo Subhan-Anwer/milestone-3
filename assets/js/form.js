@@ -6,6 +6,7 @@ document.getElementById("form").addEventListener("submit", function(e) {
     const nameValue = document.getElementById("name").value;
     const professionValue = document.getElementById("professionInput").value;
 <<<<<<< HEAD
+<<<<<<< HEAD
     const userPhone       = document.getElementById("userPhone").value;
     const userEmail       = document.getElementById("userEmail").value;
     const userWebsite     = document.getElementById("userWebsite").value;
@@ -53,6 +54,8 @@ document.getElementById("form").addEventListener("submit", function(e) {
     const userSkill6      = document.getElementById("skill-6").value;
     const userSkill6Level = document.getElementById("skill-level-6").value;
 =======
+=======
+>>>>>>> parent of 60ff93d (fully dynamic)
     const userPhone = document.getElementById("userPhone").value;
     const userEmail = document.getElementById("userEmail").value;
     const userWebsite = document.getElementById("userWebsite").value;
@@ -73,6 +76,9 @@ document.getElementById("form").addEventListener("submit", function(e) {
     const level2 = document.getElementById("level-2").value;
     const language3 = document.getElementById("language-3").value;
     const level3 = document.getElementById("level-3").value;
+<<<<<<< HEAD
+>>>>>>> parent of 60ff93d (fully dynamic)
+=======
 >>>>>>> parent of 60ff93d (fully dynamic)
 
 
@@ -100,6 +106,7 @@ document.getElementById("form").addEventListener("submit", function(e) {
     localStorage.setItem("language3", language3);
     localStorage.setItem("level3", level3);
 <<<<<<< HEAD
+<<<<<<< HEAD
     localStorage.setItem("userAbout", userAbout);
     localStorage.setItem("userJobYear1", userJobYear1);
     localStorage.setItem("userJobDegree1", userJobDegree1);
@@ -125,6 +132,8 @@ document.getElementById("form").addEventListener("submit", function(e) {
     localStorage.setItem("userSkill5Level", userSkill5Level);
     localStorage.setItem("userSkill6", userSkill6);
     localStorage.setItem("userSkill6Level", userSkill6Level);
+=======
+>>>>>>> parent of 60ff93d (fully dynamic)
 =======
 >>>>>>> parent of 60ff93d (fully dynamic)
 
