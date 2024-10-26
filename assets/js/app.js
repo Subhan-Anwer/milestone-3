@@ -64,6 +64,7 @@ const userSkill5Level = localStorage.getItem("userSkill5Level");
 const userSkill6  = localStorage.getItem("userSkill6");
 const userSkill6Level = localStorage.getItem("userSkill6Level");
 
+
 if (userName) {
     document.getElementById("name").innerHTML = `${userName}<br><span id="profession">${userProfession}</span>`;
     document.getElementById("phone").textContent = userPhone;
