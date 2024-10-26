@@ -1,4 +1,3 @@
-
 "use strict";
 /*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
@@ -23,6 +22,7 @@ const userEmail = localStorage.getItem("userEmail");
 const userWebsite = localStorage.getItem("userWebsite");
 const userLinkedin = localStorage.getItem("userLinkedin");
 const userAddress = localStorage.getItem("userAddress");
+
 const userYear1 = localStorage.getItem("userYear1");
 const userDegree1 = localStorage.getItem("userDegree1");
 const userUniversity = localStorage.getItem("userUniversity");
@@ -32,13 +32,16 @@ const userCollege = localStorage.getItem("userCollege");
 const userYear3 = localStorage.getItem("userYear3");
 const userDegree3 = localStorage.getItem("userDegree3");
 const userSchool = localStorage.getItem("userSchool");
+
 const language1 = localStorage.getItem("language1");
 const level1 = localStorage.getItem("level1");
 const language2 = localStorage.getItem("language2");
 const level2 = localStorage.getItem("level2");
 const language3 = localStorage.getItem("language3");
 const level3 = localStorage.getItem("level3");
+
 const userAbout = localStorage.getItem("userAbout");
+
 const userJobYear1 = localStorage.getItem("userJobYear1");
 const userJobCompany1 = localStorage.getItem("userJobCompany1");
 const userPosition1 = localStorage.getItem("userPosition1");
@@ -51,6 +54,7 @@ const userJobYear3 = localStorage.getItem("userJobYear3");
 const userJobCompany3 = localStorage.getItem("userJobCompany3");
 const userPosition3 = localStorage.getItem("userPosition3");
 const userAboutJob3 = localStorage.getItem("userAboutJob3");
+
 const userSkill1 = localStorage.getItem("userSkill1");
 const userSkill1Level = localStorage.getItem("userSkill1Level");
 const userSkill2 = localStorage.getItem("userSkill2");
@@ -72,6 +76,7 @@ if (userName) {
     document.getElementById("website").textContent = userWebsite;
     document.getElementById("linkedin").textContent = userLinkedin;
     document.getElementById("address").textContent = userAddress;
+
     document.getElementById("year-1").textContent = userYear1;
     document.getElementById("degree-1").textContent = userDegree1;
     document.getElementById("university").textContent = userUniversity;
@@ -81,13 +86,16 @@ if (userName) {
     document.getElementById("year-3").textContent = userYear3;
     document.getElementById("degree-3").textContent = userDegree3;
     document.getElementById("school").textContent = userSchool;
+    
     document.getElementById("language-1").textContent = language1;
     document.getElementById("level-1").innerHTML = `<div style="width: ${level1}%; max-width: 100%;"></div>`;
     document.getElementById("language-2").textContent = language2;
     document.getElementById("level-2").innerHTML = `<div style="width: ${level2}%; max-width: 100%;"></div>`;
     document.getElementById("language-3").textContent = language3;
     document.getElementById("level-3").innerHTML = `<div style="width: ${level3}%; max-width: 100%;"></div>`;
+
     document.getElementById("about-me").textContent = userAbout;
+
     document.getElementById("job-year-1").textContent = userJobYear1;
     document.getElementById("company-1").textContent = userJobCompany1;
     document.getElementById("position-1").textContent = userPosition1;
@@ -100,6 +108,7 @@ if (userName) {
     document.getElementById("company-3").textContent = userJobCompany3;
     document.getElementById("position-3").textContent = userPosition3;
     document.getElementById("about-job-3").textContent = userAboutJob3;
+
     document.getElementById("skill1").textContent = userSkill1;
     document.getElementById("skilllvl1").innerHTML = `<div style="width: ${userSkill2Level}%; max-width: 100%;"></div>`;
     document.getElementById("skill2").textContent = userSkill2;

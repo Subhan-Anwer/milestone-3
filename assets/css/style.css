@@ -167,6 +167,8 @@ body {
 
 .about p {
     color: #333;
+    max-width: 585px;
+    flex-wrap: wrap;
 }
 
 .about .box {
