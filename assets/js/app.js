@@ -50,18 +50,19 @@ const userJobYear3   = localStorage.getItem("userJobYear3");
 const userJobDegree3 = localStorage.getItem("userJobDegree3");
 const userPosition3  = localStorage.getItem("userPosition3");
 const userAboutJob3  = localStorage.getItem("userAboutJob3");
-const userLanguage1  = localStorage.getItem("userLanguage1");
-const userLangLevel1 = localStorage.getItem("userLangLevel1");
-const userLanguage2  = localStorage.getItem("userLanguage2");
-const userLangLevel2 = localStorage.getItem("userLangLevel2");
-const userLanguage3  = localStorage.getItem("userLanguage3");
-const userLangLevel3 = localStorage.getItem("userLangLevel3");
-const userLanguage4  = localStorage.getItem("userLanguage4");
-const userLangLevel4 = localStorage.getItem("userLangLevel4");
-const userLanguage5  = localStorage.getItem("userLanguage5");
-const userLangLevel5 = localStorage.getItem("userLangLevel5");
-const userLanguage6  = localStorage.getItem("userLanguage6");
-const userLangLevel6 = localStorage.getItem("userLangLevel6");
+
+const userSkill1  = localStorage.getItem("userSkill1");
+const userSkill1Level = localStorage.getItem("userSkill1Level");
+const userSkill2  = localStorage.getItem("userSkill2");
+const userSkill2Level = localStorage.getItem("userSkill2Level");
+const userSkill3  = localStorage.getItem("userSkill3");
+const userSkill3Level = localStorage.getItem("userSkill3Level");
+const userSkill4  = localStorage.getItem("userSkill4");
+const userSkill4Level = localStorage.getItem("userSkill4Level");
+const userSkill5  = localStorage.getItem("userSkill5");
+const userSkill5Level = localStorage.getItem("userSkill5Level");
+const userSkill6  = localStorage.getItem("userSkill6");
+const userSkill6Level = localStorage.getItem("userSkill6Level");
 
 if (userName) {
     document.getElementById("name").innerHTML = `${userName}<br><span id="profession">${userProfession}</span>`;
@@ -80,11 +81,11 @@ if (userName) {
     document.getElementById("degree-3").textContent = userDegree3;
     document.getElementById("school").textContent = userSchool;
     document.getElementById("language-1").textContent = language1;
-    document.getElementById("level-1").innerHTML = `<div style="width: ${level1}%;"></div>`;
+    document.getElementById("level-1").innerHTML = `<div style="width: ${level1}%; max-width: 100%;"></div>`;
     document.getElementById("language-2").textContent = language2;
-    document.getElementById("level-2").innerHTML = `<div style="width: ${level2}%;"></div>`;
+    document.getElementById("level-2").innerHTML = `<div style="width: ${level2}%; max-width: 100%;"></div>`;
     document.getElementById("language-3").textContent = language3;
-    document.getElementById("level-3").innerHTML = `<div style="width: ${level3}%;"></div>`;
+    document.getElementById("level-3").innerHTML = `<div style="width: ${level3}%; max-width: 100%;"></div>`;
     document.getElementById("about-me").textContent = userAbout;
     document.getElementById("job-year-1").textContent = userJobYear1;
     document.getElementById("company-1").textContent = userJobDegree1;
@@ -98,18 +99,19 @@ if (userName) {
     document.getElementById("company-3").textContent = userJobDegree3;
     document.getElementById("position-3").textContent = userPosition3;
     document.getElementById("about-job-3").textContent = userAboutJob3;
-    document.getElementById("lang1").textContent = userLanguage1;
-    document.getElementById("langlvl1").innerHTML = `<div style="width: ${userLangLevel1}%;"></div>`;
-    document.getElementById("lang2").textContent = userLanguage2;
-    document.getElementById("langlvl2").innerHTML = `<div style="width: ${userLangLevel2}%;"></div>`;
-    document.getElementById("lang3").textContent = userLanguage3;
-    document.getElementById("langlvl3").innerHTML = `<div style="width: ${userLangLevel3}%;"></div>`;
-    document.getElementById("lang4").textContent = userLanguage4;
-    document.getElementById("langlvl4").innerHTML = `<div style="width: ${userLangLevel4}%;"></div>`;
-    document.getElementById("lang5").textContent = userLanguage5;
-    document.getElementById("langlvl5").innerHTML = `<div style="width: ${userLangLevel5}%;"></div>`;
-    document.getElementById("lang6").textContent = userLanguage6;
-    document.getElementById("langlvl6").innerHTML = `<div style="width: ${userLangLevel6}%;"></div>`;
+
+    document.getElementById("skill1").textContent = userSkill1;
+    document.getElementById("skilllvl1").innerHTML = `<div style="width: ${userSkill2Level}%; max-width: 100%;"></div>`;
+    document.getElementById("skill2").textContent = userSkill2;
+    document.getElementById("skilllvl2").innerHTML = `<div style="width: ${userSkill2Level}%; max-width: 100%;"></div>`;
+    document.getElementById("skill3").textContent = userSkill3;
+    document.getElementById("skilllvl3").innerHTML = `<div style="width: ${userSkill3Level}%; max-width: 100%;"></div>`;
+    document.getElementById("skill4").textContent = userSkill4;
+    document.getElementById("skilllvl4").innerHTML = `<div style="width: ${userSkill4Level}%; max-width: 100%;"></div>`;
+    document.getElementById("skill5").textContent = userSkill5;
+    document.getElementById("skilllvl5").innerHTML = `<div style="width: ${userSkill5Level}%; max-width: 100%;"></div>`;
+    document.getElementById("skill6").textContent = userSkill6;
+    document.getElementById("skilllvl6").innerHTML = `<div style="width: ${userSkill6Level}%; max-width: 100%;"></div>`;
 } else {
     // do nothing!
 }

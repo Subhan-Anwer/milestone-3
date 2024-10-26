@@ -38,18 +38,19 @@ document.getElementById("form").addEventListener("submit", function(e) {
     const userJobDegree3  = document.getElementById("job-degree-3").value;
     const userPosition3   = document.getElementById("position-3").value;
     const userAboutJob3   = document.getElementById("about-job-3").value;
-    const userLanguage1   = document.getElementById("language-1").value;
-    const userLangLevel1  = document.getElementById("lang-level-1").value;
-    const userLanguage2   = document.getElementById("language-2").value;
-    const userLangLevel2  = document.getElementById("lang-level-2").value;
-    const userLanguage3   = document.getElementById("language-3").value;
-    const userLangLevel3  = document.getElementById("lang-level-3").value;
-    const userLanguage4   = document.getElementById("language-4").value;
-    const userLangLevel4  = document.getElementById("lang-level-4").value;
-    const userLanguage5   = document.getElementById("language-5").value;
-    const userLangLevel5  = document.getElementById("lang-level-5").value;
-    const userLanguage6   = document.getElementById("language-6").value;
-    const userLangLevel6  = document.getElementById("lang-level-6").value;
+    
+    const userSkill1      = document.getElementById("skill-1").value;
+    const userSkill1Level = document.getElementById("skill-level-1").value;
+    const userSkill2      = document.getElementById("skill-2").value;
+    const userSkill2Level = document.getElementById("skill-level-2").value;
+    const userSkill3      = document.getElementById("skill-3").value;
+    const userSkill3Level = document.getElementById("skill-level-3").value;
+    const userSkill4      = document.getElementById("skill-4").value;
+    const userSkill4Level = document.getElementById("skill-level-4").value;
+    const userSkill5      = document.getElementById("skill-5").value;
+    const userSkill5Level = document.getElementById("skill-level-5").value;
+    const userSkill6      = document.getElementById("skill-6").value;
+    const userSkill6Level = document.getElementById("skill-level-6").value;
 
 
     // Store the name in local storage to access it on the next page
@@ -88,18 +89,18 @@ document.getElementById("form").addEventListener("submit", function(e) {
     localStorage.setItem("userJobDegree3", userJobDegree3);
     localStorage.setItem("userPosition3", userPosition3);
     localStorage.setItem("userAboutJob3", userAboutJob3);
-    localStorage.setItem("userLanguage1", userLanguage1);
-    localStorage.setItem("userLangLevel1", userLangLevel1);
-    localStorage.setItem("userLanguage2", userLanguage2);
-    localStorage.setItem("userLangLevel2", userLangLevel2);
-    localStorage.setItem("userLanguage3", userLanguage3);
-    localStorage.setItem("userLangLevel3", userLangLevel3);
-    localStorage.setItem("userLanguage4", userLanguage4);
-    localStorage.setItem("userLangLevel4", userLangLevel4);
-    localStorage.setItem("userLanguage5", userLanguage5);
-    localStorage.setItem("userLangLevel5", userLangLevel5);
-    localStorage.setItem("userLanguage6", userLanguage6);
-    localStorage.setItem("userLangLevel6", userLangLevel6);
+    localStorage.setItem("userSkill1", userSkill1);
+    localStorage.setItem("userSkill1Level", userSkill1Level);
+    localStorage.setItem("userSkill2", userSkill2);
+    localStorage.setItem("userSkill2Level", userSkill2Level);
+    localStorage.setItem("userSkill3", userSkill3);
+    localStorage.setItem("userSkill3Level", userSkill3Level);
+    localStorage.setItem("userSkill4", userSkill4);
+    localStorage.setItem("userSkill4Level", userSkill4Level);
+    localStorage.setItem("userSkill5", userSkill5);
+    localStorage.setItem("userSkill5Level", userSkill5Level);
+    localStorage.setItem("userSkill6", userSkill6);
+    localStorage.setItem("userSkill6Level", userSkill6Level);
 
     // Redirect to the next page
     window.location.href = "user-resume.html";
