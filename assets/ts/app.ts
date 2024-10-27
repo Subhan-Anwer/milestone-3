@@ -1,4 +1,3 @@
-"use strict";
 /*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
     const scrollUp = document.getElementById('scroll-up');
@@ -22,6 +21,7 @@ const userEmail = localStorage.getItem("userEmail");
 const userWebsite = localStorage.getItem("userWebsite");
 const userLinkedin = localStorage.getItem("userLinkedin");
 const userAddress = localStorage.getItem("userAddress");
+const profilePic = localStorage.getItem("profilePicInput");
 
 const userYear1 = localStorage.getItem("userYear1");
 const userDegree1 = localStorage.getItem("userDegree1");
@@ -76,6 +76,10 @@ if (userName) {
     (document.getElementById("website") as HTMLElement).textContent = userWebsite;
     (document.getElementById("linkedin") as HTMLElement).textContent = userLinkedin;
     (document.getElementById("address") as HTMLElement).textContent = userAddress;
+    const profilePicElement = document.getElementById("profile-picture") as HTMLImageElement;
+    if (profilePicElement) {
+    profilePicElement.src = profilePic || "";
+    }
 
     (document.getElementById("year-1") as HTMLElement).textContent = userYear1;
     (document.getElementById("degree-1") as HTMLElement).textContent = userDegree1;

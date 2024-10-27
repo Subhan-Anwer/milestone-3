@@ -11,6 +11,7 @@ document.getElementById("form").addEventListener("submit", function(e) {
     const userWebsite     = document.getElementById("userWebsite").value;
     const userLinkedin    = document.getElementById("userLinkedin").value;
     const userAddress     = document.getElementById("userAddress").value;
+    const profilePicInput = document.getElementById("profilePicInput").files[0];
 
     const userYear1       = document.getElementById("year-1").value;
     const userDegree1     = document.getElementById("degree-1").value;
@@ -66,6 +67,15 @@ document.getElementById("form").addEventListener("submit", function(e) {
     localStorage.setItem("userWebsite", userWebsite);
     localStorage.setItem("userLinkedin", userLinkedin);
     localStorage.setItem("userAddress", userAddress);
+
+    const reader = new FileReader();
+
+    reader.onload = function(event) {
+      const base64String = event.target?.result || "";
+      localStorage.setItem("profilePicInput", base64String);
+    };
+
+    reader.readAsDataURL(profilePicInput);
 
     localStorage.setItem("userYear1", userYear1);
     localStorage.setItem("userDegree1", userDegree1);

@@ -22,6 +22,7 @@ const userEmail = localStorage.getItem("userEmail");
 const userWebsite = localStorage.getItem("userWebsite");
 const userLinkedin = localStorage.getItem("userLinkedin");
 const userAddress = localStorage.getItem("userAddress");
+const profilePic = localStorage.getItem("profilePicInput");
 
 const userYear1 = localStorage.getItem("userYear1");
 const userDegree1 = localStorage.getItem("userDegree1");
@@ -76,6 +77,7 @@ if (userName) {
     document.getElementById("website").textContent = userWebsite;
     document.getElementById("linkedin").textContent = userLinkedin;
     document.getElementById("address").textContent = userAddress;
+    document.getElementById("profile-picture").src = profilePic;
 
     document.getElementById("year-1").textContent = userYear1;
     document.getElementById("degree-1").textContent = userDegree1;

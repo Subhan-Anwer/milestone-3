@@ -11,6 +11,7 @@
     const userWebsite     = (document.getElementById("userWebsite") as HTMLInputElement).value;
     const userLinkedin    = (document.getElementById("userLinkedin") as HTMLInputElement).value;
     const userAddress     = (document.getElementById("userAddress") as HTMLInputElement).value;
+    const profilePicInput = (document.getElementById("profilePicInput") as HTMLInputElement)?.files?.[0];
 
     const userYear1       = (document.getElementById("year-1") as HTMLInputElement).value;
     const userDegree1     = (document.getElementById("degree-1") as HTMLInputElement).value;
@@ -66,6 +67,16 @@
     localStorage.setItem("userWebsite", userWebsite);
     localStorage.setItem("userLinkedin", userLinkedin);
     localStorage.setItem("userAddress", userAddress);
+
+    const reader = new FileReader();
+
+    reader.onload = (event: any) => {
+      const base64String = event.target?.result || "";
+      localStorage.setItem("profilePicInput", base64String);
+    };
+
+    reader.readAsDataURL(profilePicInput as File);
+    // reader.readAsDataURL(profilePicInput);
 
     localStorage.setItem("userYear1", userYear1);
     localStorage.setItem("userDegree1", userDegree1);

@@ -87,6 +87,69 @@ textarea {
   width: 450px;
 }
 
+/* image upload styling */
+
+.file-input-container {
+  justify-self: center;
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: dashed 2px #fff;
+  border-radius: 15px;
+  margin: 30px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.file-input-container:hover {
+  cursor: pointer;
+  border: #007bff 2px dashed;
+  background-color: #023c57;
+}
+
+.file-input-container span {
+  font-size: 18px;
+}
+
+.file-input-container p {
+  margin: 5px 0 10px 0;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.file-input-container input[type="file"] {
+  position: inherit;
+  width: 310px;
+  height: 50px;
+  padding: 3px;
+  color: #444;
+  border: 1px solid rgba(8, 8, 8, 0.288);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.file-input::file-selector-button {
+  height: 42px;
+  border-radius: 8px;
+  margin: 0 20px 0 0;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.file-input::file-selector-button:hover {
+  background-color: #014997;
+}
+
+
 /* Button styling */
 .submit-btn {
   padding: 12px 30px;
